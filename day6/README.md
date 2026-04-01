@@ -18,3 +18,14 @@ unchaged, hence produces output from zero to very large positive numbers and all
 solving the vanishing gradient problem (caused by using sigmoid which squashes all inputs into smaller values which
 makes the learning slower). ReLU is better to be used in hidden layers while sigmoid is better used on the ouput layer
 to make the model predict in yes/no fashion.
+
+## Explain forward propagation in your own words.
+Forward propagation means the data flows forward from input to output layer by layer in the neural network. From input
+layer the data feeds into your network, then passes through hidden layers on each neuron in the layer mathematical 
+operation are applied on it (weighted sum and activation functions), finally the processed data reaches the output layer
+which gives the prediction.
+
+## What would need to happen for this network to actually learn something? (Hint: what's missing?)
+This network lacks structured training dataset (we need labeled data split into training and testing) to train our model.
+We also need to apply cost function and optimzer so that when our model will start learning it should update its weights
+and biases w.r.t cost function in order to learn the patterns.
